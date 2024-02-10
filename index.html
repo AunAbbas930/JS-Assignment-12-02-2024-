@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment - February 5th, 2024</title>
+    
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+<a class="question_title" href="#">
+    Bano Qabil 2.0 (1601) - JavaScript Assignment - 4<br>
+    (Submission: February 12th, 2024)</a>
+<a class="question" href="#q1">Q1</a>
+<a class="question" href="#q2">Q2</a>
+<a class="question" href="#q3">Q3</a>
+<a class="question" href="#q4">Q4</a>
+<a class="question" href="#q5">Q5</a>
+<a class="question" href="#q6">Q6</a>
+<a class="question" href="#q7">Q7</a>
+<a class="question" href="#q8">Q8</a>
+<a class="question" href="#q9">Q9</a>
+<a class="question" href="#q10">Q10</a>
+<a class="question" href="#q11">Q11</a>
+<a class="question" href="#q12">Q12</a>
+<a class="question_name">Aun Abbas</a>
+</div>
+</div>
+
+<div class="sheet">
+    <p id="q1"><br><br></p>
+<h2>Question No. 1</h2>
+<p>Write a program that 
+<br>a. Store correct password in a JS variable. 
+<br>b. Asks user to enter his/her password 
+<br>c. Validate the two passwords: 
+<br>i. Check if user has entered password. If not, then give 
+message “Please enter your password” 
+<br>ii. Check if both passwords are same. If they are same, 
+show message “Correct! The password you entered 
+matches the original password”. Show “Incorrect 
+password” otherwise.
+<span style="color: red">
+  <br><br><b>Program:</b>
+  <br>var pass = "pakistan";
+  <br>var inPass = prompt("Please enter your password.");
+  <br>if(inPass === "")
+  <br>{
+  <br>  alert("Please enter your password!");
+  <br>}
+  <br>else if(pass === inPass)
+  <br>{
+  <br>  alert("Correct! The password you entered matches the original password.")
+  <br>}
+  <br>else
+  <br>{
+  <br>  alert("Incorrect password!")
+  <br>}
+</span></p>
+<input type="button" class="btn" value="Run Program (pass: pakistan)" onClick="q1()">
+    <p id="q2"><br><br></p>
+<h2>Question No. 2</h2>
+<p>This if/else statement does not work. Try to fix it: 
+<br>var greeting; 
+<br>var hour = 13; 
+<br>if (hour < 18) { 
+<br>greeting = "Good day"; 
+<br>else 
+<br>greeting = "Good evening"; 
+<br>} </p>
+<h2>Answer for Question No. 2</h2>
+<p>Following necessary changes are required to fix the code:
+<br>var greeting; 
+<br>var hour = 13; 
+<br>if (hour < 18) { 
+<br>greeting = "Good day"; 
+<br><span style="color:red; font-weight: bold;">}&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>Closing curly bracket added</i></span>
+<br>else 
+<br><span style="color:red; font-weight: bold;">{&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i>Opening curly bracket added</i></span>
+<br>greeting = "Good evening"; 
+<br>} </p>
+
+
+    <p id="q3"><br><br></p>
+<h2>Question No. 3</h2>
+<p>3. Arrays 
+<br>a. Declare an empty array using JS literal notation to store 
+student names in future. 
+<br><span style="color:red"><b>Answer:</b> var students = [];</span>
+<br>b. Declare an empty array using JS object notation to store 
+student names in future. 
+<br><span style="color:red"><b>Answer:</b> var students = new array();</span>
+<br>c. Declare and initialize a strings array. 
+<br><span style="color:red"><b>Answer:</b> var countries = ["pakistan", "china", "nepal"];</span>
+<br>d. Declare and initialize a numbers array. 
+<br><span style="color:red"><b>Answer:</b> var nums = [2, 5, 6, 12];</span>
+<br>e. Declare and initialize a boolean array. 
+<br><span style="color:red"><b>Answer:</b> var bools = [true, false, false, false, true];</span>
+<br>f. Declare and initialize a mixed array. 
+<br><span style="color:red"><b>Answer:</b> var mixArray = [2, 5, "apple", true, "mango", 3];</span>
+<br>g. Declare and Initialize an array and store available education 
+qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, 
+MS, M. Phil., PhD).
+<br><span style="color:red"><b>Answer:</b> var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];</span>
+</p>
+
+
+    <p id="q4"><br><br></p>
+<h2>Question No. 4</h2>
+<p>Initialize an array with color names. Display the array elements in 
+your browser. 
+<br>a. Ask the user what color he/she wants to add to the 
+beginning & add that color to the beginning of the array. 
+Display the updated array in your browser. 
+<br>b. Ask the user what color he/she wants to add to the end & 
+add that color to the end of the array. Display the updated 
+array in your browser. 
+<br>c. Add two more color to the beginning of the array. Display 
+the updated array in your browser. 
+<br>d. Delete the first color in the array. Display the updated 
+array in your browser. 
+<br>e. Delete the last color in the array. Display the updated array 
+in your browser. 
+<br>f. Ask the user at which index he/she wants to add a color & 
+color name. Then add the color to desired position/index. . 
+Display the updated array in your browser. 
+<br>g. Ask the user at which index he/she wants to delete color(s) 
+& how many colors he/she wants to delete. Then remove the 
+same number of color(s) from user-defined position/index. . 
+Display the updated array in your browser.</p> 
+<input type="button" class="btn" value="Run Program" onClick="q4()">
+
+
+    <p id="q5"><br><br></p>
+<h2>Question No. 5</h2>
+<p>Write a program to store student scores in an array & sort the array 
+in ascending order using Array’s sort method.</p>
+<input type="button" class="btn" value="Run Program" onClick="q5()">
+
+
+    <p id="q6"><br><br></p>
+<h2>Question No. 6</h2>
+<p>Write a program to store phone manufacturers (Apple, Samsung, 
+Motorola, Nokia, Sony & Haier) in an array. Display the 
+dropdown/select menu in your browser using document.write() 
+method.</p> 
+<input type="button" class="btn" value="Run Program" onClick="q6()">
+
+
+    <p id="q7"><br><br></p>
+<h2>Question No. 7</h2>
+<p>Write a program to print multiplication table of any number using 
+for loop. Table number & length should be taken as an input from 
+user.</p>
+<input type="button" class="btn" value="Run Program" onClick="q7()">
+
+    <p id="q8"><br><br></p>
+<h2>Question No. 8</h2>
+<p>Generate the following series in your browser. See example output. 
+<br>a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 
+<br>b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 
+<br>c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 
+<br>d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 
+<br>e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k </p>
+<input type="button" class="btn" value="Run Program" onClick="q8()">
+
+
+    <p id="q9"><br><br></p>
+<h2>Question No. 9</h2>
+<p>You have an array A = [“cake”, “apple pie”, “cookie”, “chips”, 
+“patties”] 
+<br>Write a program to enable “search by user input” in an 
+array. 
+<br>After searching, prompt the user whether the given item is 
+found in the list or not. </p>
+<input type="button" class="btn" value="Run Program" onClick="q9()">
+
+
+    <p id="q10"><br><br></p>
+<h2>Question No. 10</h2>
+<p>Write a program that takes user input. Convert and show the 
+input in title case.</p>
+<input type="button" class="btn" value="Run Program" onClick="q10()">
+
+
+    <p id="q11"><br><br></p>
+<h2>Question No. 11</h2>
+<p>Write a program that takes user input. Convert and show the 
+input in capital letters.</p>
+<input type="button" class="btn" value="Run Program" onClick="q11()">
+
+
+    <p id="q12"><br><br></p>
+<h2>Question No. 12</h2>
+<p>Write a program that converts a string “472” to a number 
+472. Display the values & types in your browser.</p>
+<input type="button" class="btn" value="Run Program" onClick="q12()">
+</div>
+</body>
+</html>
