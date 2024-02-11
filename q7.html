@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment - February 12th, 2024</title>
+    
+    <script>
+      var num = +prompt("Please enter a number for table:")
+      var rows = +prompt("How many length of table is required?")
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="text-align: left;">
+<h3>Multiplication table of <script>document.write(num);</script>:</h3>
+<p>
+<script>
+  for(i=1; i <= rows; i++)
+  {
+  document.write(num + " X " + i + " = " + num*i + "<br>");
+  }
+</script>
+</p>
+<input type="button" class="btn" value="Reset" onClick="location.reload()">
+<br><br>
+<input type="button" class="btn" value="Close" onClick="window.close()">
+
+</div>
+</body>
+</html>

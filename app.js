@@ -28,3 +28,11 @@ else
 greeting = "Good evening";
 }
 }
+
+function q5()
+{
+var scoreStudents = [23, 56,72, 21, 23, 9, 24, 67, 78, 12, 55, 89, 43, 30];
+console.log(scoreStudents);
+scoreStudents.sort(function(a, b){return a - b});
+console.log(scoreStudents);
+}

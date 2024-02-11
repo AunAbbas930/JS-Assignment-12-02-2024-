@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment - February 12th, 2024</title>
+    
+    <script>
+      var colors = ["red", "blue", "green", "yellow", "purple"];
+      
+      
+      function a1()
+      {
+        var a = prompt("Enter a color to add in the begining of array:");
+        colors.unshift(a);
+        document.getElementById("arrayDisplay").innerHTML = document.getElementById("arrayDisplay").innerHTML ;
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="text-align: left;">
+<h3>This is the array of colors:</h3>
+<p id="arrayDisplay">
+<script>
+  for(i=0; i< colors.length; i++)
+  {
+  document.write("colors["+i+"] ==> "+colors[i] + "<br>");
+  }
+</script>
+</p>
+<br>
+<input type="button" class="btn" value="a. Add color at begining of array" onClick="a1()">
+
+</div>
+</body>
+</html>
