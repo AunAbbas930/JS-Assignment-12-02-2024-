@@ -6,31 +6,170 @@
     <title>JavaScript Assignment - February 12th, 2024</title>
     
     <script>
+      //On loading, initial state
       var colors = ["red", "blue", "green", "yellow", "purple"];
+      var out = "<head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      
+      var btns = "";
+      btns = btns + "<br><input type='button' class='btn' value='a. Add color at begining of array' onClick='a1()'>";
+      btns = btns + "<br><br><input type='button' class='btn' value='b. Add color at the end of array' onClick='a2()'>";
+      btns = btns + "<br><br><input type='button' class='btn' value='c. Add two colors at begining of array' onClick='a3()'>";
+      btns = btns + "<br><br><input type='button' class='btn' value='d. Delete first color of array' onClick='a4()'>";
+      btns = btns + "<br><br><input type='button' class='btn' value='e. Delete last color of array' onClick='a5()'>";
+      btns = btns + "<br><br><input type='button' class='btn' value='f. Add color on specific position of array' onClick='a6()'>";
+      btns = btns + "<br><br><input type='button' class='btn' value='g. Remove colors from position of array and onwards' onClick='a7()'>";
+      
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p></body></html>"
+      document.write(out);
       
       
       function a1()
       {
-        var a = prompt("Enter a color to add in the begining of array:");
-        colors.unshift(a);
-        document.getElementById("arrayDisplay").innerHTML = document.getElementById("arrayDisplay").innerHTML ;
+      document.open();
+      var a = prompt("Enter a color to add in the begining of array:");
+      colors.unshift(a);
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
+      }
+      
+      
+      function a2()
+      {
+      document.open();
+      var a = prompt("Enter a color to add in the end of array:");
+      colors.push(a);
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
+      }
+      
+      function a3()
+      {
+      document.open();
+      var a = prompt("Enter 1st color to add in the begining of array:");
+      colors.unshift(a);
+      var b = prompt("Enter 2nd color to add in the begining of array:");
+      colors.unshift(b);
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
+      }
+      
+      
+      function a4()
+      {
+      document.open();
+      colors.shift();
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
+      }
+      
+      
+      function a5()
+      {
+      document.open();
+      colors.pop();
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
+      }
+      
+      
+      function a6()
+      {
+      document.open();
+      var ind = +prompt("Enter position of array to enter a color:");
+      if(ind >= 0 && ind <= colors.length)
+        {
+        var col = prompt("Enter color to add in the array at position "+ind+":");
+        colors.splice(ind,0,col);
+        }
+      else
+        {
+        alert("Incorrect position / index entered!")
+        }
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
+      }
+      
+      function a7()
+      {
+      document.open();
+      var ind = +prompt("Enter position of array to delete colors from:");
+      if(ind >= 0 && ind <= colors.length)
+        {
+        var del = prompt("How many colors to be deleted from position "+ind+":");
+        colors.splice(ind,del);
+        }
+      else
+        {
+        alert("Incorrect position / index entered!")
+        }
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      for(i=0; i< colors.length; i++)
+      {
+      out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
+      }
+      out = out + "</p>";
+      out = out + btns + "</p></body></html>"
+      document.write(out);
       }
     </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div style="text-align: left;">
-<h3>This is the array of colors:</h3>
-<p id="arrayDisplay">
-<script>
-  for(i=0; i< colors.length; i++)
-  {
-  document.write("colors["+i+"] ==> "+colors[i] + "<br>");
-  }
-</script>
-</p>
 <br>
 <input type="button" class="btn" value="a. Add color at begining of array" onClick="a1()">
+<br><br>
+<input type="button" class="btn" value="b. Add color at the end of array" onClick="a2()">
+<br><br>
+<input type="button" class="btn" value="c. Add two colors at begining of array" onClick="a3()">
+<br><br>
+<input type="button" class="btn" value="d. Delete first color of array" onClick="a4()">
+<br><br>
+<input type="button" class="btn" value="e. Delete last color of array" onClick="a5()">
+<br><br>
+<input type="button" class="btn" value="f. Add color on specific position of array" onClick="a6()">
+<br><br>
+<input type="button" class="btn" value="g. Remove colors from position of array and onwards" onClick="a7()">
 
 </div>
 </body>

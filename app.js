@@ -36,3 +36,46 @@ console.log(scoreStudents);
 scoreStudents.sort(function(a, b){return a - b});
 console.log(scoreStudents);
 }
+
+function q9()
+{
+var array9 = ["cake", "apple pie", "cookie", "chips", "patties"];
+var searchArray = prompt("Enter an item to search:");
+var flag;
+for(i=0; i<= array9.length; i++)
+{
+  if(array9[i]===searchArray)
+  {
+  flag = true;
+  break;
+  }
+}
+  if(flag)
+  {
+    alert("Found!");
+  }
+  else
+  {
+    alert("Not Found!");
+  }
+}
+
+function q10()
+{
+var input = prompt("Enter a sentence in any case:").toLowerCase();
+inputString = input.split(" ");
+for(i=0; i< inputString.length; i++)
+{
+  inputString[i] = inputString[i].charAt(0).toUpperCase() + inputString[i].slice(1);
+}
+
+inputString = inputString.join(" ");
+alert("Title case:    "+inputString);
+}
+
+
+function q11()
+{
+var input = prompt("Enter a sentence in any case:").toUpperCase();
+alert("Upper case:    "+input);
+}
