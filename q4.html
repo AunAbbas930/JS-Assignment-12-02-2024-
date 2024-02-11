@@ -8,7 +8,9 @@
     <script>
       //On loading, initial state
       var colors = ["red", "blue", "green", "yellow", "purple"];
-      var out = "<head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       
       var btns = "";
       btns = btns + "<br><input type='button' class='btn' value='a. Add color at begining of array' onClick='a1()'>";
@@ -32,7 +34,8 @@
       document.open();
       var a = prompt("Enter a color to add in the begining of array:");
       colors.unshift(a);
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
@@ -48,7 +51,8 @@
       document.open();
       var a = prompt("Enter a color to add in the end of array:");
       colors.push(a);
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
@@ -65,7 +69,8 @@
       colors.unshift(a);
       var b = prompt("Enter 2nd color to add in the begining of array:");
       colors.unshift(b);
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
@@ -80,7 +85,8 @@
       {
       document.open();
       colors.shift();
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
@@ -95,7 +101,8 @@
       {
       document.open();
       colors.pop();
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
@@ -119,7 +126,8 @@
         {
         alert("Incorrect position / index entered!")
         }
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";
@@ -142,7 +150,8 @@
         {
         alert("Incorrect position / index entered!")
         }
-      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'><h3>Array of colors:</h3><p>";
+      var out = "<html><head><link rel='stylesheet' href='style.css'></head><body style='text-align:left'>";
+      out = out + "<input type='button' class='btn' value='Close' onClick='window.close()'><h3>Array of colors:</h3><p>";
       for(i=0; i< colors.length; i++)
       {
       out = out + "colors["+i+"] ==> "+colors[i] + "<br>";

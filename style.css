@@ -41,14 +41,6 @@ body {
   color: #021c33;
 }
 
-.question_name {
-  text-decoration: none;
-  text-align: right;
-  padding: 10px;
-  padding-left: 100px;
-  font-size: 18pt;
-  color: #021c33;
-}
 
 .sheet {
   text-align: left;
@@ -78,13 +70,5 @@ body {
 
 .question{
   display: none;
-}
-
-.question_name{
-  text-decoration: none;
-  text-align: right;
-  padding: 10px;
-  font-size: 12pt;
-  color: #021c33;
 }
 }
