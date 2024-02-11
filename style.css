@@ -73,3 +73,18 @@ body {
   background-color: #021c33;
   color: #0f78d4;
 }
+
+@media screen and (max-width: 800px) {
+
+.question{
+  display: none;
+}
+
+.question_name{
+  text-decoration: none;
+  text-align: right;
+  padding: 10px;
+  font-size: 12pt;
+  color: #021c33;
+}
+}
